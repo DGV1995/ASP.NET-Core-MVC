@@ -6376,19 +6376,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego.garcia-viana\\.nuget\\packages\\": {}
+    "C:\\Users\\Diego Garcia-Viana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\ASP.NET MVC 5\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
+      "projectUniqueName": "D:\\Cursos Udemy\\ASP.NET-Core-MVC\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
       "projectName": "BookListRazor",
-      "projectPath": "C:\\Personal\\ASP.NET MVC 5\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
-      "packagesPath": "C:\\Users\\diego.garcia-viana\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\ASP.NET MVC 5\\BookListRazor\\BookListRazor\\obj\\",
+      "projectPath": "D:\\Cursos Udemy\\ASP.NET-Core-MVC\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
+      "packagesPath": "C:\\Users\\Diego Garcia-Viana\\.nuget\\packages\\",
+      "outputPath": "D:\\Cursos Udemy\\ASP.NET-Core-MVC\\BookListRazor\\BookListRazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\diego.garcia-viana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Diego Garcia-Viana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6396,8 +6396,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dsbu-web/_packaging/XCuttings/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -6452,7 +6451,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
