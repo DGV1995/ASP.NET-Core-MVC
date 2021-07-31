@@ -43,5 +43,32 @@ namespace InAndOut.Controllers
 
             return View(expense);
         }
+
+        // Delete-GET
+        public async Task<IActionResult> Delete(int? id)
+        {
+            var obj = await _db.Expense.FindAsync(id);
+
+            if (obj == null || id == null || id == 0)
+                return NotFound();
+
+            return View(obj);
+        }
+
+        // Delete-POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeletePost(int? id)
+        {
+            var expense = await _db.Expense.FindAsync(id);
+
+            if (expense == null)
+                return NotFound();
+
+            _db.Expense.Remove(expense);
+            await _db.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
     }
 }
