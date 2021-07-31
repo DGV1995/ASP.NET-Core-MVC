@@ -41,7 +41,7 @@ namespace InAndOut.Controllers
                 return RedirectToAction("Index");
             }
 
-            return BadRequest();
+            return View(expense);
         }
     }
 }
