@@ -1,0 +1,40 @@
+﻿@model IEnumerable<InAndOut.Models.Expense>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Expenses List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a asp-controller="Expense" asp-action="Create" class="btn btn-primary">Create New Expense</a>
+        </div>
+    </div>
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var expense in Model)
+                {
+                    <tr>
+                        <td width="30%">@expense.Name</td>
+                        <td width="30%">@expense.Amount</td>
+                        <td><button onclick="return confirm('Are you sure?')" class="btn btn-danger" asp-route-id="@expense.Id" asp-action="Delete">Delete</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No items available</p>
+    }
+</div>

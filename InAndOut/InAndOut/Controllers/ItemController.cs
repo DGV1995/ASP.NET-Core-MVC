@@ -44,7 +44,7 @@ namespace InAndOut.Controllers
             return View();
         }
 
-        [HttpDelete]
+        /*[HttpDelete]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -59,6 +59,6 @@ namespace InAndOut.Controllers
             }
 
             return NotFound();
-        }
+        }*/
     }
 }

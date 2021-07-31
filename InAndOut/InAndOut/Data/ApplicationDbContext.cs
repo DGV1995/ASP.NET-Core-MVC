@@ -14,5 +14,10 @@ namespace InAndOut.Data
         /// Item table
         /// </summary>
         public DbSet<Item> Item { get; set; }
+
+        /// <summary>
+        /// Expense table
+        /// </summary>
+        public DbSet<Expense> Expense { get; set; }
     }
 }
